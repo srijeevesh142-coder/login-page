@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+       <div class="main">
+    <h2>Login</h2>
+
+    <form id="loginForm">
+
+        <div class="input-box">
+            <i class='bx bxs-envelope'></i>
+            <input type="email" class="input" id="mail" name="mail" placeholder="Enter Username or e-mail" required>
+        </div>
+
+        <div class="input-box">
+            <i class='bx bxs-lock-alt'></i>
+            <input type="password" class="input" id="pin" name="pin" placeholder="8-digit password" required>
+        </div>
+
+        <div class="box">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#" class="forget">Forget Password</a>
+        </div>
+
+        <p id="output"></p>
+
+        <button onclick="login(event)">Login</button>
+
+        <p>Don't have account? <a href="#" class="sign">Sign up</a></p>
+    </form>
+
+    <div class="icons">
+        <a><i class='bx bxl-instagram'></i></a>
+        <a><i class='bx bx-envelope'></i></a>
+        <a><i class='bx bxl-whatsapp'></i></a>
+    </div>
+</div>
+
+
+<div class="popup" id="popup">
+  <div class="popup-card">
+    <i class='bx bxs-check-circle'></i>
+    <h3>Login Successful</h3>
+    <p>Redirecting to Hostals Website...</p>
+  </div>
+</div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
